@@ -1,0 +1,15 @@
+{
+  "name": "LEMON TEA",
+  "short_name": "LEMON TEA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f1e7",
+  "theme_color": "#f7f1e7",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

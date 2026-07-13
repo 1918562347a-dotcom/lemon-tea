@@ -1,0 +1,35 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="56" fill="url(#bg)"/>
+  <circle cx="242" cy="212" r="150" fill="url(#glow)"/>
+  <rect x="354" y="166" width="492" height="588" rx="98" fill="url(#cup)"/>
+  <rect x="390" y="204" width="420" height="520" rx="78" fill="url(#tea)"/>
+  <path d="M390 408C454 386 524 398 594 420C664 442 734 444 810 416V646C754 688 682 708 598 708C512 708 442 688 390 646V408Z" fill="url(#depth)"/>
+  <ellipse cx="538" cy="352" rx="68" ry="44" fill="#F4DE77" fill-opacity="0.84"/>
+  <ellipse cx="658" cy="530" rx="62" ry="38" fill="#FFF1B2" fill-opacity="0.24"/>
+  <path d="M454 130C528 106 596 108 678 134" stroke="#6E9344" stroke-width="16" stroke-linecap="round"/>
+  <ellipse cx="422" cy="118" rx="48" ry="26" transform="rotate(-10 422 118)" fill="#648C42"/>
+  <ellipse cx="710" cy="150" rx="42" ry="24" transform="rotate(26 710 150)" fill="#6A9545"/>
+  <defs>
+    <linearGradient id="bg" x1="84" y1="74" x2="1108" y2="862" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFBEF"/>
+      <stop offset="1" stop-color="#EEE0B6"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(242 212) rotate(90) scale(150)">
+      <stop stop-color="#FFF1A7"/>
+      <stop offset="1" stop-color="#FFF1A7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="600" y1="166" x2="600" y2="754" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#FFF7DE" stop-opacity="0.48"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="600" y1="204" x2="600" y2="724" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE6A1"/>
+      <stop offset="0.4" stop-color="#D28B37"/>
+      <stop offset="1" stop-color="#70391A"/>
+    </linearGradient>
+    <linearGradient id="depth" x1="600" y1="404" x2="600" y2="708" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5A2A10" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#4C230D" stop-opacity="0.34"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LEMON TEA premium landing page with multilingual support, animated product storytelling, and mobile-ready shopping experience."
+    />
+    <title>LEMON TEA</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="LEMON TEA home">LEMON TEA</a>
+
+        <nav class="topnav">
+          <a href="#product" data-i18n="nav.product">产品</a>
+          <a href="#story" data-i18n="nav.story">故事</a>
+          <a href="#flavor" data-i18n="nav.flavor">风味</a>
+          <a href="#serve" data-i18n="nav.serve">饮用方式</a>
+          <a href="#shop" data-i18n="nav.shop">购买</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <label class="language-switcher" for="language-select">
+            <span data-i18n="nav.language">语言</span>
+            <select id="language-select" data-language-select aria-label="Language selector">
+              <option value="zh">中文</option>
+              <option value="en">EN</option>
+              <option value="ko">한국어</option>
+              <option value="ja">日本語</option>
+            </select>
+          </label>
+
+          <button class="bag-button" type="button" data-bag-toggle>
+            <span data-i18n="bag.button">购物袋</span>
+            <span class="bag-count" data-bag-count>0</span>
+          </button>
+        </div>
+      </header>
+
+      <aside class="bag-drawer" data-bag-drawer aria-hidden="true">
+        <div class="bag-panel">
+          <div class="bag-head">
+            <div>
+              <p class="eyebrow" data-i18n="bag.eyebrow">购物袋</p>
+              <h3 data-i18n="bag.title">你的 Lemon Tea 选择</h3>
+            </div>
+            <button class="bag-close" type="button" data-bag-close aria-label="Close bag">×</button>
+          </div>
+
+          <div class="bag-summary">
+            <div class="bag-row">
+              <span data-i18n="bag.item">商品</span>
+              <strong data-bag-format>单瓶</strong>
+            </div>
+            <div class="bag-row">
+              <span data-i18n="bag.qty">数量</span>
+              <strong data-bag-qty>0</strong>
+            </div>
+            <div class="bag-row">
+              <span data-i18n="bag.total">小计</span>
+              <strong data-bag-total>¥0</strong>
+            </div>
+          </div>
+
+          <p class="bag-empty" data-bag-empty data-i18n="bag.empty">
+            购物袋还是空的，先选一份 Lemon Tea 吧。
+          </p>
+
+          <div class="bag-actions">
+            <button class="button-primary" type="button" data-bag-checkout data-i18n="bag.checkout">
+              去结算
+            </button>
+            <button class="button-secondary" type="button" data-bag-close data-i18n="bag.continue">
+              继续浏览
+            </button>
+          </div>
+        </div>
+      </aside>
+      <div class="bag-backdrop" data-bag-backdrop hidden></div>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero.eyebrow">高级柠檬茶，不必喧闹。</p>
+            <h1 data-i18n="hero.title">
+              把一盒日常柠檬茶，做成值得停下来看的品牌体验。
+            </h1>
+            <p class="hero-text" data-i18n="hero.text">
+              这不是“把产品摆上去”的网页，而是一页真正面向顾客的品牌宣传页。它要让人一眼觉得高级，
+              再往下看时逐渐产生购买欲。
+            </p>
+
+            <div class="hero-meta">
+              <span data-i18n="hero.meta1">真实茶感</span>
+              <span data-i18n="hero.meta2">柠檬清亮</span>
+              <span data-i18n="hero.meta3">冷饮更好喝</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button-primary" href="#shop" data-i18n="hero.primary">立即购买</a>
+              <button class="button-secondary" type="button" data-scroll-target="#story" data-i18n="hero.secondary">
+                了解这款茶
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-stage reveal">
+            <div class="morph-stage" data-morph-stage>
+              <div class="morph-halo morph-halo-a"></div>
+              <div class="morph-halo morph-halo-b"></div>
+
+              <div class="product-morph" data-product-morph>
+                <div class="carton-cap"></div>
+                <div class="carton-body">
+                  <div class="carton-highlight"></div>
+                  <div class="carton-label-top" data-i18n="product.wordmark">LEMON TEA</div>
+                  <div class="carton-label-sub" data-i18n="product.subline">Bright citrus. Clean tea.</div>
+                  <div class="carton-glass">
+                    <div class="tea-liquid"></div>
+                    <div class="ice ice-a"></div>
+                    <div class="ice ice-b"></div>
+                    <div class="ice ice-c"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="floating-tag floating-tag-left" data-i18n="hero.tagLeft">
+                1000ml 日常容量
+              </div>
+              <div class="floating-tag floating-tag-right" data-i18n="hero.tagRight">
+                滚动时，产品会随页面变化
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="scroll-product" id="product">
+          <div class="sticky-product">
+            <div class="product-copy">
+              <p class="eyebrow" data-i18n="morph.eyebrow">滚动主视觉</p>
+              <h2 data-i18n="morph.title">屏幕往下走，柠檬茶自己跟着变形。</h2>
+              <p class="section-text" data-i18n="morph.text">
+                从纸盒感、到玻璃感、再到冷饮感，视觉不是静止摆着，而是跟着滚动慢慢变化，
+                让页面更像真正的品牌官网，而不是模板拼贴。
+              </p>
+            </div>
+
+            <div class="product-scene">
+              <div class="scene-card">
+                <div class="scene-meter">
+                  <span data-i18n="morph.step1">盒装识别</span>
+                  <span data-i18n="morph.step2">茶色展开</span>
+                  <span data-i18n="morph.step3">冷饮收尾</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-track">
+            <article class="story-block active" data-story-index="0">
+              <span class="story-number">01</span>
+              <h3 data-i18n="story.block1Title">先让人认出来</h3>
+              <p data-i18n="story.block1Text">
+                首屏不讲太多，先建立品牌记忆点。黄、黑、茶色的对比要直接，让顾客知道这是一款干净、明亮、有气质的柠檬茶。
+              </p>
+            </article>
+
+            <article class="story-block" data-story-index="1">
+              <span class="story-number">02</span>
+              <h3 data-i18n="story.block2Title">再让人想象口感</h3>
+              <p data-i18n="story.block2Text">
+                真正打动顾客的不是“参数”，而是脑海里出现的味觉预期。茶的厚度、柠檬的清亮、冰饮后的顺口感，都要被看见。
+              </p>
+            </article>
+
+            <article class="story-block" data-story-index="2">
+              <span class="story-number">03</span>
+              <h3 data-i18n="story.block3Title">最后把购买理由补齐</h3>
+              <p data-i18n="story.block3Text">
+                当视觉、口感、使用场景都成立之后，购买按钮才有说服力。这才是一个真正面向顾客的宣传网页逻辑。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="value-grid reveal" id="story">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="value.eyebrow">为什么这款茶值得被记住</p>
+            <h2 data-i18n="value.title">不是“便宜饮料”的语气，而是“有品质的日常选择”。</h2>
+          </div>
+
+          <div class="grid-three">
+            <article class="value-card">
+              <span class="chip" data-i18n="value.card1Tag">柠檬感</span>
+              <h3 data-i18n="value.card1Title">清亮，不尖锐</h3>
+              <p data-i18n="value.card1Text">
+                不是廉价香精感的酸，而是刚好把茶味提起来的明亮感，入口更干净。
+              </p>
+            </article>
+
+            <article class="value-card">
+              <span class="chip" data-i18n="value.card2Tag">茶底</span>
+              <h3 data-i18n="value.card2Title">顺滑，有骨架</h3>
+              <p data-i18n="value.card2Text">
+                不会被柠檬抢走主导权，茶底仍然稳，喝起来更成熟，也更耐喝。
+              </p>
+            </article>
+
+            <article class="value-card">
+              <span class="chip" data-i18n="value.card3Tag">场景</span>
+              <h3 data-i18n="value.card3Title">好看，也好带入日常</h3>
+              <p data-i18n="value.card3Text">
+                无论是办公桌、冰箱、野餐还是送人，它都不显得随便，这是高级感的关键。
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="flavor-showcase reveal" id="flavor">
+          <div class="flavor-copy">
+            <p class="eyebrow" data-i18n="flavor.eyebrow">风味表达</p>
+            <h2 data-i18n="flavor.title">顾客不一定懂茶，但一定懂“想不想喝”。</h2>
+            <p class="section-text" data-i18n="flavor.text">
+              所以这部分不做教科书式说明，而是直接把风味翻译成购买语言：
+              看起来清透，想象里顺口，喝完后会愿意再买。
+            </p>
+          </div>
+
+          <div class="flavor-cards">
+            <article class="flavor-card">
+              <strong>01</strong>
+              <h3 data-i18n="flavor.note1Title">前段是柠檬的亮</h3>
+              <p data-i18n="flavor.note1Text">先提神，再醒口，让人觉得这一口很干净。</p>
+            </article>
+            <article class="flavor-card">
+              <strong>02</strong>
+              <h3 data-i18n="flavor.note2Title">中段是红茶的稳</h3>
+              <p data-i18n="flavor.note2Text">不像糖水，也不飘，保留了茶的层次和成年感。</p>
+            </article>
+            <article class="flavor-card">
+              <strong>03</strong>
+              <h3 data-i18n="flavor.note3Title">尾段是冰过后的松弛</h3>
+              <p data-i18n="flavor.note3Text">收尾爽，回味短，不腻，是会让人默默喝完的一种顺口。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="serve-section reveal" id="serve">
+          <div class="section-head narrow">
+            <p class="eyebrow" data-i18n="serve.eyebrow">饮用方式</p>
+            <h2 data-i18n="serve.title">真正让顾客下单的，往往是“我能在哪一刻喝它”。</h2>
+          </div>
+
+          <div class="grid-three">
+            <article class="serve-card">
+              <span class="chip" data-i18n="serve.card1Tag">工作中</span>
+              <h3 data-i18n="serve.card1Title">替代无聊的白水</h3>
+              <p data-i18n="serve.card1Text">有味道，但不太重；能提神，又不破坏工作节奏。</p>
+            </article>
+
+            <article class="serve-card">
+              <span class="chip" data-i18n="serve.card2Tag">聚会时</span>
+              <h3 data-i18n="serve.card2Title">看起来更体面</h3>
+              <p data-i18n="serve.card2Text">比普通瓶装饮料更有气质，摆上桌也不显得廉价。</p>
+            </article>
+
+            <article class="serve-card">
+              <span class="chip" data-i18n="serve.card3Tag">送人时</span>
+              <h3 data-i18n="serve.card3Title">不夸张，但有分寸</h3>
+              <p data-i18n="serve.card3Text">作为小礼物也成立，因为它的视觉和口感都足够克制。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="shop-section reveal" id="shop">
+          <div class="shop-intro">
+            <p class="eyebrow" data-i18n="shop.eyebrow">购买 Lemon Tea</p>
+            <h2 data-i18n="shop.title">信息不需要很多，但每一项都要让顾客更接近“想买”。</h2>
+            <p class="section-text" data-i18n="shop.text">
+              所以这里保留真正有用的选项：规格、数量、购买反馈和购物袋，而不是堆一堆没有意义的装饰。
+            </p>
+          </div>
+
+          <div class="shop-layout">
+            <article class="shop-card">
+              <div class="shop-visual-card">
+                <div class="mini-product">
+                  <div class="mini-body"></div>
+                  <div class="mini-lemon mini-lemon-a"></div>
+                  <div class="mini-lemon mini-lemon-b"></div>
+                </div>
+              </div>
+
+              <div class="shop-detail">
+                <div class="shop-title-row">
+                  <div>
+                    <p class="product-kicker">LEMON TEA</p>
+                    <h3 data-i18n="shop.productTitle">Signature Citrus Edition</h3>
+                  </div>
+                  <strong class="price" data-price-display>¥12</strong>
+                </div>
+
+                <div class="selection-block">
+                  <span class="selection-label" data-i18n="shop.formatLabel">规格</span>
+                  <div class="option-row">
+                    <button class="option-chip active" type="button" data-format="single" data-price="12" data-i18n="shop.formatSingle">单瓶</button>
+                    <button class="option-chip" type="button" data-format="triple" data-price="32" data-i18n="shop.formatTriple">三瓶装</button>
+                    <button class="option-chip" type="button" data-format="gift" data-price="58" data-i18n="shop.formatGift">礼盒装</button>
+                  </div>
+                </div>
+
+                <div class="selection-block">
+                  <span class="selection-label" data-i18n="shop.featureLabel">产品标签</span>
+                  <div class="option-row static-row">
+                    <span class="chip" data-i18n="shop.feature1">低负担口感</span>
+                    <span class="chip" data-i18n="shop.feature2">冰饮友好</span>
+                    <span class="chip" data-i18n="shop.feature3">送礼也合适</span>
+                  </div>
+                </div>
+
+                <div class="purchase-row">
+                  <div class="quantity-picker" aria-label="Quantity picker">
+                    <button type="button" data-qty-action="decrease">−</button>
+                    <span data-qty-value>1</span>
+                    <button type="button" data-qty-action="increase">+</button>
+                  </div>
+                  <button class="button-primary full-width" type="button" data-add-to-bag data-i18n="shop.addToBag">
+                    加入购物袋
+                  </button>
+                </div>
+
+                <p class="purchase-note" data-purchase-note data-i18n="shop.note">
+                  默认推荐冰镇后饮用，风味会更完整。
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="closing reveal">
+          <div class="closing-card">
+            <p class="eyebrow" data-i18n="closing.eyebrow">最后一屏</p>
+            <h2 data-i18n="closing.title">像真正的品牌页一样结束，而不是像作业一样结束。</h2>
+            <p class="section-text" data-i18n="closing.text">
+              好的宣传网页，不只是“有几个大字”和“能滚动”。它应该让顾客明白这款茶是什么、为什么值得买、买完会出现在什么生活场景里。
+            </p>
+            <div class="closing-actions">
+              <a class="button-primary" href="#shop" data-i18n="closing.primary">现在购买</a>
+              <button class="button-secondary" type="button" data-scroll-target="#home" data-i18n="closing.secondary">
+                回到顶部
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p data-i18n="footer.left">LEMON TEA 品牌概念站点</p>
+        <p data-i18n="footer.right">已按移动端适配，可直接部署为静态网站。</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

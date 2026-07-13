@@ -1,0 +1,9 @@
+{
+  "name": "lemon-tea-brand-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A premium multilingual Lemon Tea static landing page for Vercel deployment.",
+  "scripts": {
+    "start": "python -m http.server 4173"
+  }
+}
